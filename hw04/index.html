@@ -153,7 +153,8 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      在這堂「圖像相似度分析」課程中，我深入學習了如何量化兩張圖片的相似程度。我們探討了從計算像素差異的均方誤差（MSE）、融入人類視覺感知的結構相似性指標（SSIM），到利用深度學習模型捕捉高層次特徵的 LPIPS。
+      最有趣的實作環節，是運用 Python 程式碼分析同學間手寫「秋」字的相似度並產出報表。這次學習讓我成功將數學理論與程式實務結合，也深刻體會到圖像分析在字體識別與生成領域的強大應用潛力，收穫非常扎實！
     </div>
   </div>
 
@@ -169,22 +170,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
           <td>Simple baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
           <td>Medium baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
           <td>Strong baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -194,16 +195,40 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
+  <div class="row hw12">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <button type="button" onclick="location.href='https://drive.google.com/drive/folders/1fnne5G31725MxpTPT2OaBNRHSXx6Kzyx?usp=drive_link'">
+        前往「秋」資料夾
+      </button>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <span>CSV檔位置連結</span>
+      <br>
+      <button type="button" onclick="location.href='https://github.com/lctung/ai2026s/blob/main/hw04/results.csv'">
+        前往查看相似度比較結果
+      </button>
+      <div>(p.s 請記得修改網址)</div>
+    </div>
+  </div>
 
+  <!-- ------------------------------------------------>
+  <div class="row hw12" align="center">
+    <div class="col-md-12 twenty">
+      <figcaption>SSIM / LPIPS - 互動式 D3.js</figcaption>
+      <iframe 
+          style="background-color: #fff; display: block;" 
+          src="hover.html" 
+          width="100%" 
+          height="860" 
+          frameborder="0" 
+          scrolling="no">
+      </iframe>
+    </div>
+  </div>
   <!-- ------------------------------------------------>
 
 
@@ -252,4 +277,3 @@
 
 </body>
 </html>
-
